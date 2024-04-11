@@ -41,6 +41,7 @@ app.post("/update", async (req, res) => {
       [userName, locationCordinates, location],
       (err, data) => {
         if (err) throw new err();
+        console.log("success")
         res.json({
           message: "Data updated successfully",
           id: data.insertId,
