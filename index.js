@@ -54,6 +54,10 @@ app.post("/update", async (req, res) => {
   }
 });
 
+app.get('/home', (req, res) => {
+  res.send("GET Request Called")
+})
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
